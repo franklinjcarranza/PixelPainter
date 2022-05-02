@@ -1,0 +1,5 @@
+<div class="colorPaletteContainer">
+    <span (colorPickerChange)="changecolor()" [cpWidth]="'180px'" [style.background]="arrayColors[selectedColor]"
+        [cpToggle]="true" [cpDialogDisplay]="'inline'" [cpCancelButton]="false"
+        [(colorPicker)]="arrayColors[selectedColor]" [cpOutputFormat]="'hex'"></span>
+</div>

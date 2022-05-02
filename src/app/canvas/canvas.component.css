@@ -1,0 +1,46 @@
+.maximum {
+    display: flex;
+    width: 98%;
+    margin-left: 1%;
+}
+
+.tasks {
+    width: 20%;
+}
+
+.canvascontainer {
+    --size: 16;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(var(--size), 1fr);
+    grid-template-rows: repeat(var(--size), 1fr);
+    gap: 3px;
+    padding: 3px;
+    background-color: rgb(28, 28, 29);
+    width: 700px;
+    height: 70vh;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.size {
+    text-align: center;
+}
+
+.pixel {
+    background-color: rgb(59, 54, 54);
+    border-radius: 2px;
+}
+
+.color {
+    text-align: center;
+    width: 85.2%;
+    background-color: red;
+}
+
+.buttons_options{
+border-radius: 5px;
+margin: 3px;
+}
+
+

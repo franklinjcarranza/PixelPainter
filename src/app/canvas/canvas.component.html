@@ -1,0 +1,23 @@
+<div class="size">
+    CHOOSE THE GRID SIZE:
+    <select name="miselect" [(ngModel)]="optionselected" (change)="createdivs(optionselected)">
+        <option [value]="size" *ngFor="let size of sizes">{{size}}</option>
+    </select>
+    <br>
+    <button class="buttons_options" (click)="reset()">Reset</button> 
+    <button class="buttons_options"  (click)="generatejpg()">Save JPG</button>
+    <button class="buttons_options" (click)="generatepng()">Save PNG</button>
+    <button class="buttons_options" (click)="generatesvg()">Save SVG</button>
+</div>
+<div class="maximum">
+    <div class="tasks">
+        <app-colorpicker (sendcolor)="variable($event)"></app-colorpicker>
+
+    </div>
+    <div>
+        <div class="canvascontainer" [style.--size]="optionselected" id="canvas">
+            <div class="pixel" *ngFor="let pixelid of pixels" [id]="pixelid" (click)="changecolorclick(pixelid)"></div>
+        </div>
+    </div>
+</div>
+
